@@ -1,0 +1,249 @@
+@mixin screen($device) {
+    @if $device == lg {
+        @media only screen and (max-width: 1200px) {
+            @content;
+        }
+    } @else if $device == padPro {
+        @media only screen and (max-width: 1024px) {
+            @content;
+        }
+    } @else if $device == padPro {
+        @media only screen and (max-width: 1024px) {
+            @content;
+        }
+    } @else if $device == pad {
+        @media only screen and (max-width: 770px) {
+            @content;
+        }
+    } @else if $device == xs {
+        @media only screen and (max-width: 480px) {
+            @content;
+        }
+    } @else {
+        @media only screen and (max-width: $device) {
+            @content;
+        }
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.mainWrapper {
+    overflow: hidden;
+    //Background Photo/////////////////////////
+    .background {
+        height: 100vh;
+        background-image: url("../images/background\ image.jfif");
+        background-size: cover;
+        background-position: center;
+    }
+    //////////////////////////////////////////
+
+    //Top side////////////////////////////////
+    .topSide {
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        @include screen("992px") {
+            background-color: gray !important;
+        }
+        #logo {
+            height: 34px;
+            width: 158px;
+            margin-top: 15px;
+            margin-left: 33px;
+            background-image: url("../images/brand/logo.png");
+            background-size: cover;
+        }
+        //Menu icon inside navigation bar//////
+        .menuIcon {
+            color: white;
+        }
+        ///////////////////////////////////////
+
+        //Navbar///////////////////////////////
+        #navbarNav {
+            margin-top: 15px;
+            margin-left: 45px;
+        }
+        li {
+            margin-right: 10px;
+            a {
+                color: white !important;
+                transition: all 0.3s linear;
+                font-size: 14px;
+                &:hover {
+                    color: rgba(125, 198, 231, 1) !important;
+                }
+            }
+        }
+        .language {
+            background-color: rgba(255, 255, 255, 0);
+            border: none;
+            color: white;
+            font-size: 14px;
+            @include screen("992px") {
+                margin-left: 0 !important;
+                width: 50px !important;
+            }
+            option {
+                background-color: black;
+            }
+        }
+        /////////////////////////////////////
+
+        hr {
+            color: rgb(131, 130, 130);
+        }
+    }
+    //Right corner menu button//////////
+    .menuBar {
+        top: 30px;
+        right: 30px;
+        font-size: 25px;
+        color: white;
+        transition: all 0.3s linear;
+        z-index: 600;
+        &:hover {
+            color: #6c7ae0;
+        }
+    }
+    ////////////////////////////////////
+
+    //Middle side/////////////////////////////
+    .middleSide {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -40%);
+        color: white;
+        z-index: 8;
+        h6 {
+            font-size: 28px;
+            font-family: "Playfair Display", serif;
+            @include screen("1087px") {
+                font-size: 25px;
+            }
+        }
+        h1 {
+            font-size: 53px;
+            font-family: "Playfair Display", serif;
+            margin-top: 20px;
+            margin-bottom: 45px;
+            @include screen("1153px") {
+                font-size: 50px;
+            }
+            @include screen("1087px") {
+                font-size: 45px;
+            }
+            @include screen("978px") {
+                margin-top: 15px;
+                margin-bottom: 30px;
+            }
+            @include screen("536px") {
+                font-size: 40px;
+            }
+        }
+        .btn {
+            border-radius: 30px;
+            padding: 11px 43px;
+            background-color: black !important;
+            border: none;
+            transition: all 0.3s linear;
+            margin-bottom: 10px;
+            &:hover {
+                background-color: white !important;
+                color: black !important;
+            }
+        }
+    }
+    ////////////////////////////////////////
+
+    //Bottom Side///////////////////////////
+    .bottomSide {
+        bottom: 60px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 190px;
+        height: 130px;
+        background-image: url("../images/background\ image.jfif");
+        background-size: cover;
+        h6 {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+    ///////////////////////////////////////
+
+    //Layout///////////////////////////////
+    .layout {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.473);
+        z-index: 2;
+    }
+    ////////////////////////////////////////
+
+    //Sliding window////////////////////////
+    .slide {
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        opacity: 0;
+        transition: all 0.3s linear;
+
+        //Leftside//////////////////////////
+        .leftSide {
+            width: 72%;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+        ///////////////////////////////////
+
+        //Rightside////////////////////////
+        .rightSide {
+            width: 28%;
+            height: 100vh;
+            background-color: white;
+            .topP {
+                top: 90px;
+                p {
+                    font-size: 14px;
+                    line-height: 20px !important;
+                }
+            }
+            .middleP {
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                h5 {
+                    color: #007bff;
+                    font-size: 18px;
+                }
+            }
+            .bottomP {
+                bottom: 15px;
+                .first {
+                    color: #7dc6e7;
+                    margin-bottom: 25px;
+                }
+                .second {
+                    color: rgb(99, 99, 99);
+                }
+            }
+        }
+        /////////////////////////////////////////
+    }
+    .slide.active {
+        opacity: 1 !important;
+    }
+    //End of sliding window///////////////////////
+}

@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 9000px;
+}
+.red{
+    color: red !important;    
+}
+.blue{
+    color: blue !important;
+}
+.black{
+    color: black;
+}
+.mt-50px{
+    margin-top: 50px !important;
+}
+
+.topSide .mainColor:nth-child(1){
+    color: red;
+}
+.topSide .mainColor:nth-child(2){
+    color: blue;
+}
+
+.newOne p{
+    background-color: violet;
+}
+.newOne .topP{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: darkgreen;
+
+}
+.overWriteExample{
+    margin-top: 30px;
+}
+.overWriteExample p{
+    color: goldenrod;
+}
+.overWriteExample .yellow{
+    color: yellow;
+}
+.width1{
+    margin-top: 50px !important;
+    background-color: purple;
+    height: 300px;
+    width:90%;
+    margin: auto;  
+}
+.width2{
+    background: url("../images/e66.jpg");
+    height: 300px;
+    width: 40%;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+}
+.finalWidthExample{
+    margin-top: 100px !important;
+    width: 80%;
+    background-color: skyblue;
+    height: 300px;
+    margin: auto;
+    background-image: url("../images/e66interior.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 20px solid red;
+}
+.finalWidthExample h3{
+    text-align: center;
+    padding: 30px;
+    background: brown;
+}
+.imageExample img{
+    height: 300px;
+    margin-top: 50px;
+    width: 40%;
+    object-fit: cover;
+}
+.finalWidthExample h3 span{
+    color:blue;
+}

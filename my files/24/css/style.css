@@ -1,0 +1,29 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.loader{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.box{
+  background-color: red;
+  height: 150px;
+  width: 150px;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.box2{
+  background-color: blue;
+  height: 250px;
+  width: 250px;
+}
+
+.green{
+  background-color: green;
+}

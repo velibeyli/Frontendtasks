@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.text-center{
+    text-align: center;
+}
+.color-white{
+    color: white;
+}
+.pointer{
+    cursor: pointer;
+}
+.display-flex{
+    display: flex;
+}
+ul li{
+    list-style: none;
+}
+.header{
+    height: 240px;
+    background-image: url("../images/bg_contact.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+}
+.top-left{
+    display: flex;
+}
+
+.logo img{
+    margin: 25px 45px;
+}
+.navBar ul{
+    display: flex;
+}
+.navBar ul li{
+    margin: 32px 10px 32px 20px;
+    transition: all 0.3s linear;
+}
+
+.top-right i{
+    font-size: 1.5em;
+    margin: 30px;
+    transition: all 0.3s linear;
+}
+
+.navBar ul li:hover{
+    color: skyblue;
+}
+.logo img{
+    cursor: pointer;
+}
+.navBar ul li{
+    cursor: pointer;
+}
+.top-right i:hover{
+    color: rgba(92, 83, 216, 0.781);
+}
+.header .contact{
+    font-size: 3em;
+    padding-top: 10px;
+}
+
+.sideBar{
+    height: 100vh;
+    width: 30%;
+    background-color: #007bff;
+}
+
+.address{
+    width: 87%;
+    margin: auto;
+    margin-top: 120px;
+    border: 1px solid #e6e6e6;
+}
+.addressBox{
+    margin: 25px;
+    display: flex;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+}
+.sameB{
+    width: 25%;
+    border-right: 1px solid #e6e6e6;
+}
+.box1{
+    text-align: left;
+}
+.box1 .location{
+    margin-top: 1px;
+    margin-bottom: 25px;
+    text-align: left;
+    display: flex;
+}
+.box1 i{
+    padding-left: 20px;
+    padding-right: 25px;
+}
+.box1 h2{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.locationA p{
+    padding-bottom: 10px;
+    line-height: 1.5em;
+}
+.email{
+    color: #007bff;
+    text-align: center;
+    font-size: 0.8em;
+}
+.messageB{
+    width: 43%;
+    border: 1px solid #e6e6e6;
+    margin: auto;
+    margin-top: 45px;
+    margin-bottom: 30px;
+}
+.insideM{
+    width: 75%;
+    margin: auto;
+    margin-top: 40px;
+    text-align: center;
+}
+.insideM h2{
+    padding-top: 20px;
+    padding-bottom: 35px;
+    color: #333;
+}
+.insideM input{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #e6e6e6;
+}
+.insideM textarea{
+    width: 100%;
+    padding: 30px 25px;
+}
+.insideM button{
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    color: white;
+    background-color: rgb(7, 7, 7);
+    border: 1px solid black;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1200px) {
+    .address{
+        width: 75%;
+        margin: auto;
+        margin-top: 105px;
+    }
+    .addressBox{
+        margin: 20px;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .sameB{
+        width: 33%;
+    }
+    .box1{
+        text-align: left;
+        margin-top: 30px;
+    }
+      
+}
+@media only screen and (max-width: 1000px) {
+    .address{
+        width: 80%;
+        margin: auto;
+        margin-top: 80px;
+    }
+    .addressBox{
+        margin: 20px;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .sameB{
+        width: 45%;
+    }
+    .messageB{
+        width: 100%;
+        margin-top: 45px;
+        margin-bottom: 30px;
+    }
+    .email{
+        font-size: 0.7em;
+    }
+ 
+    .top{
+        border-bottom: 0px solid gray;
+    }
+    .header .contact{
+        padding-top: 0;
+    }    
+}
+@media only screen and (max-width: 480px) {
+    .address{
+        width: 80%;
+        margin: auto;
+        margin-top: 50px;
+    }
+    .addressBox{
+        margin: 20px;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .sameB{
+        width: 90%;
+    }  
+    .top-left{
+        display: block;
+    }
+    .logo img{
+        margin: 20px 0px 2px 30px;
+    }
+    .navBar ul li{
+        margin: 3px 20px 2px 20px;
+    }
+    .header .contact{
+        font-size: 2em;
+        padding-top: 10px;
+    }
+    .top-right i{
+        font-size: 1.5em;
+        margin: 30px 40px;
+    }   
+    .navBar ul{
+        display: block;
+    }
+    .email{
+        font-size: 1.1em;
+    }
+   
+}

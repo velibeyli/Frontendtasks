@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.topSide h4{
+    color: red;
+    background: goldenrod;
+    
+}
+h3{
+    color: blue;
+    background: wheat;
+    text-align: center;
+    font-size: 12px;
+    padding: 20px;
+    margin-top: 18px;
+    border: 3px solid purple;
+}
+.bottomSide p{
+    color: coral;
+    background: seagreen;
+    margin-top: 15px !important;
+    text-align: right;
+    padding: 8px;
+    font-weight: bold;
+    width: 60vw;
+    margin: auto;
+}
+.width1{
+    background: url("../images/m5.jpg");
+    height: 300px;
+    margin-top: 20px;
+    background-size: cover;
+    background-position-y: center;
+}
+.width2{
+    background: url("../images/m5.jpg");
+    height: 270px;
+    margin-top: 20px !important;
+    width: 80%;
+    margin: auto;
+    border-radius: 20px;
+    background-size: cover;
+}
+.width2 h6{
+    color: white;
+    padding: 15px;
+    text-align: center;
+}

@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.firstHeading h2{
+    text-align: center;
+    margin: 20px 150px;
+}
+.secondHeading h4{
+    text-align: center;
+    color: gray;
+}
+.mainPart .leftSide{
+    background-image: url("../images/bmw.jpg");
+    height: 300px;
+    width: 38%;
+    margin-top: 50px;
+    margin-left: 150px;
+}
+.mainPart .rightSide{
+    background-image: url("../images/vision.jpg");
+    height: 300px;
+    width: 38%;
+    margin-top: 50px;
+    margin-right: 150px;
+    
+    
+}
+.mainPart{
+    display: flex;
+    justify-content: space-between;
+}
+.leftSide h3{
+    padding-top: 320px;
+}
+.leftSide p{
+    padding-top: 25px;
+    color: gray;
+    font-size: 18px;
+}
+.rightSide h3{
+    padding-top: 320px;
+}
+.rightSide p{
+    padding-top: 25px;
+    color: gray;
+    font-size: 18px;
+}

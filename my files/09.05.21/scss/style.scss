@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@mixin screen($device) {
+    @if $device == lg {
+        @media only screen and (max-width: 1200px) {
+            @content;
+        }
+    } @else if $device == padPro {
+        @media only screen and (max-width: 1024px) {
+            @content;
+        }
+    } @else if $device == padPro {
+        @media only screen and (max-width: 1024px) {
+            @content;
+        }
+    } @else if $device == pad {
+        @media only screen and (max-width: 770px) {
+            @content;
+        }
+    } @else if $device == xs {
+        @media only screen and (max-width: 480px) {
+            @content;
+        }
+    } @else {
+        @media only screen and (max-width: $device) {
+            @content;
+        }
+    }
+}
+
+header {
+    overflow: hidden;
+    .background {
+        height: 37vh;
+        width: 100%;
+        background-image: url("../images/bg-02.jpg");
+        background-position: center;
+        background-size: cover;
+        .topSide {
+            top: 0;
+            left: 0;
+            z-index: 16;
+            border-bottom: 1px solid rgba(192, 192, 192, 0.637);
+            .jeansPhoto{
+                background-image: url("../images/jeans-material.png");
+                height: 80px;
+                width: 100%;
+                background-repeat: repeat;
+                transition: all .1s linear;
+                opacity: 0;
+            }
+            #navigationBar {
+                margin: 11px 33px;
+                a {
+                    color: white !important;
+                    font-family: Poppins-Medium;
+                    transition: all 0.3s linear;
+                    &:hover {
+                        color: rgba(125, 198, 231, 1) !important;
+                    }
+                }
+                select {
+                    width: 45px;
+                    border: none;
+                    background-color: rgba(0, 0, 0, 0);
+                    color: white;
+                    font-family: Poppins-Medium;
+                    font-size: 14px;
+                    option {
+                        background-color: black;
+                    }
+                }
+            }
+        }
+
+        .menuIcon {
+            top: 25px;
+            right: 32px;
+            transition: all 0.3s linear;
+            cursor: pointer;
+            z-index: 50;
+            &:hover {
+                color: #6c7ae0 !important;
+            }
+            i {
+                font-size: 22px;
+            }
+        }
+
+        h1 {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-family: Poppins-Bold;
+            font-size: 50px;
+            line-height: 1.1;
+            z-index: 15;
+        }
+    }
+    .sliderWindow {
+        width: 29%;
+        height: 100vh;
+        background-color: white;
+        top: 0;
+        left: 100%;
+        transition: all 0.3s linear;
+        z-index: 100;
+        .closeIcon {
+            margin-top: 25px;
+            margin-right: 32px;
+            transition: all 0.3s linear;
+            cursor: pointer;
+            &:hover {
+                color: #6c7ae0 !important;
+            }
+            i {
+                font-size: 25px;
+            }
+        }
+        .sliderContainer {
+            width: 70%;
+            margin: auto;
+            margin-top: 30px;
+            .topS {
+                p {
+                    font-size: 14px;
+                    margin-bottom: 12px !important;
+                    transition: all 0.3s linear;
+                    cursor: pointer;
+                    &:hover {
+                        color: #6c7ae0;
+                    }
+                }
+            }
+            h6 {
+                color: #007bff;
+                top: 45%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 1.1rem;
+                transition: all 0.3s linear;
+                cursor: pointer;
+                &:hover {
+                    color: #0056b3;
+                }
+            }
+            .bottomS {
+                bottom: 15px;
+                h5 {
+                    color: #7dc6e7;
+                    font-size: 18px;
+                    margin-bottom: 25px;
+                }
+                p {
+                    font-weight: bold;
+                    color: #666666;
+                }
+            }
+        }
+    }
+}
+.layout {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.6) !important;
+    z-index: 20;
+}
+.content{
+    .nav-item{
+        margin-right: 18px;
+        transition: all .4s linear;
+        &:hover #insideContentHr{
+            display: block !important;
+        }
+        .nav-link{
+            color: rgb(15, 15, 15) !important;
+            padding: 0;
+            transition: all .4s linear;
+        }
+        hr{
+            opacity: 0.6;
+            width: 95%;
+            margin: auto;
+            display: none;
+        }
+    }
+}
+
+footer{
+    .backgroundPhoto{
+        height: 58vh;
+        background-image: url("../images/jeans-material.png");
+        background-repeat: repeat;
+        .column{
+            width: calc(100%/4);
+            margin-top: 60px;
+            font-family: Montserrat-Bold;
+            padding: 15px;
+            h6{
+                margin-bottom: 35px;
+                font-size: 14px;
+            }
+            p{
+                font-size: 15px;
+                a{
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+            .socialNetwork i{
+                transition: all .3s linear;
+                cursor: pointer;
+                &:hover {
+                    color: #6c7ae0;
+                }
+            }
+            input{
+                width: 100%;
+                background-color: rgba(255, 255, 255, 0);
+                border: none;
+                border-bottom: 2px solid rgba(192, 192, 192, 0.1);
+                padding: 5px 15px;
+                margin-bottom: 15px;
+                outline: none;
+                color: white;
+            }
+            button{
+                padding: 10px 50px;
+                background-color: black;
+                color: white;
+                border: 1px solid black;
+                border-radius: 22px;
+                font-family: Poppins-Medium;
+                transition: all .3s linear;
+                &:hover{
+                    background-color: white;
+                    border: 1px solid white;
+                    color: black;
+                }
+            }
+        }
+    }
+}

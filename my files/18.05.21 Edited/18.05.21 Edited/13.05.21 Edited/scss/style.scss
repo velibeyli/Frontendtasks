@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main div{
+    width: 48%;
+    input{
+        width: 100%;
+        padding: 3px;
+        border: 1px solid black;
+        border-radius: 4px;
+    }
+    .invalidInput{
+        border: 1px solid red;
+        box-shadow: #ff0000ad 0px 1px 7px;
+    }
+    .validInput{
+        border: 1px solid green;
+    }
+    textarea{
+        width: 100%;
+    }
+}
+.alert{
+    display: none;
+}

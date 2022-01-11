@@ -1,0 +1,62 @@
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    border-radius: $radius;
+}
+
+@mixin box-shadow($shadow) {
+    -webkit-box-shadow: $shadow;
+    -moz-box-shadow: $shadow;
+    box-shadow: $shadow;
+}
+
+@mixin transform($properties) {
+    -webkit-transform: $properties;
+    -moz-transform: $properties;
+    -ms-transform: $properties;
+    -o-transform: $properties;
+    transform: $properties;
+}
+
+@mixin transition($time) {
+    -webkit-transition: $time;
+    -moz-transition: $time;
+    -ms-transition: $time;
+    -o-transition: $time;
+    transition: $time;
+}
+
+@mixin center-vertically {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    @include transform(translate(-50%, -50%));
+}
+
+@mixin screen($device) {
+    @if $device == lg {
+        @media only screen and (max-width: 1200px) {
+            @content;
+        }
+    } @else if $device == padPro {
+        @media only screen and (max-width: 1024px) {
+            @content;
+        }
+    } @else if $device == padPro {
+        @media only screen and (max-width: 1024px) {
+            @content;
+        }
+    } @else if $device == pad {
+        @media only screen and (max-width: 770px) {
+            @content;
+        }
+    } @else if $device == xs {
+        @media only screen and (max-width: 480px) {
+            @content;
+        }
+    } @else {
+        @media only screen and (max-width: $device) {
+            @content;
+        }
+    }
+}

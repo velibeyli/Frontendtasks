@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mainPart{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+.mainPart .secondBox{
+    height: 300px;
+    width: 23%;
+    border: 1px solid gray;
+    border-radius: 12px;
+    padding: 30px;
+    transition: all .3s linear;
+}
+.secondBox i{
+    color: blue;
+    font-size: 38px;
+    padding-right: 32px;
+}
+.secondBox p{
+    padding-top: 30px;
+}
+.secondBox h6{
+    font-size: 15px;
+    padding-top: 30px;
+}
+.secondBox h2{
+    padding-top: 30px;
+}
+.mainPart .secondBox:hover{
+    background-color: blue;
+    color: white;
+}

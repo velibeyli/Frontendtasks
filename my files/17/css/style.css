@@ -1,0 +1,44 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.leftSide div{
+  overflow: hidden;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.leftSide img{
+  object-fit: cover;
+  transition: all .3s linear;
+}
+.leftSide img:hover{
+  transform: scale(1.05);
+}
+hr{
+  border: 1px solid #00bcd4;
+  border-width: 1px;
+  margin-top: 60px;
+}
+.header h3{
+  font-size: 31px;
+}
+.header h6{
+  font-size: 17px;
+}
+.missionVision{
+  transition: all .3s linear;
+}
+.missionVision:hover{
+  box-shadow: 0 5px 21px rgb(208 208 208 / 54%);
+}
+.leftS img{
+  object-fit: cover;
+}
+.rightS{
+  width: 700px;
+  height: 445px;
+  background-image: url("../images/bg_blue.jpg");
+  padding: 40px ;
+}

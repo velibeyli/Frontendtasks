@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.message .box{
+    height: 600px;
+    width: 50%;
+    margin: auto;
+    margin-top: 20px;
+    border: 1px solid silver;
+}
+.box h2{
+    text-align: center;
+    padding-top: 40px;
+}
+.box input{
+    margin-top: 30px;
+    margin-left: 50px;
+    width: 85%;
+    height: 50px;
+    border: 1px solid silver;
+    padding-left: 20px;
+}
+.box textarea{
+    margin-top: 30px;
+    margin-left: 50px;
+    width: 85%;
+    padding: 25px 20px;
+}
+.box button{
+    width: 85%;
+    height: 40px;
+    margin-left: 50px;
+    margin-top: 20px;
+    border: 1px solid;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.904);
+    color: silver;       
+}

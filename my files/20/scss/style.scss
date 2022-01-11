@@ -1,0 +1,93 @@
+@mixin transform($properties) {
+    -webkit-transform: $properties;
+    -moz-transform: $properties;
+    -ms-transform: $properties;
+    -o-transform: $properties;
+    transform: $properties;
+}
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    border-radius: $radius;
+}
+@mixin center-vertically {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    @include transform(translate(-50%, -50%));
+}
+@mixin screen($device) {
+    @if $device == lg {
+        @media only screen and (max-width: 1200px) {
+            @content;
+        }
+    } @else if $device == padPro {
+        @media only screen and (max-width: 1024px) {
+            @content;
+        }
+    } @else if $device == padPro {
+        @media only screen and (max-width: 1024px) {
+            @content;
+        }
+    } @else if $device == pad {
+        @media only screen and (max-width: 770px) {
+            @content;
+        }
+    } @else if $device == xs {
+        @media only screen and (max-width: 480px) {
+            @content;
+        }
+    } @else {
+        @media only screen and (max-width: $device) {
+            @content;
+        }
+    }
+}
+
+$main-color: white;
+$border-radius:13px;
+$border: 1px solid gray;
+$background-color: black;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.section1{
+    border: $border;
+    background-color: red;
+    &:hover{
+        background-color: brown;
+    }
+    h1{
+        text-align: center;
+        color: $main-color;
+        span{
+            color: blue;
+            font-weight: bold;
+            cursor: pointer;
+            &:hover{
+                color: white;
+            }
+        }
+    }
+}
+.section2{
+    height: 40px;
+    background-color: blueviolet;
+    @include screen(pad){
+        background-color: red;
+    }
+    @include screen(xs){
+        background-color: blue;
+    }
+    @include screen(lg){
+        background-color: black;
+    }
+    @include screen("1320px"){
+        background-color: bisque;
+    }
+    @include screen("1000px"){
+        background-color: white;
+    }
+}    

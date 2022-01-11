@@ -1,0 +1,449 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.w-100{
+    width: 100%;
+}
+.w-16{
+    width: 16.66%;
+}
+.d-flex{
+    display: flex;
+}
+.m-auto{
+    margin: auto;
+}
+.main-color{
+    color: #00bcd4
+}
+.back-color-white{
+    background-color: white;
+}
+.s-between{
+    justify-content: space-between;
+}
+.s-around{
+    justify-content: space-around;
+}
+.pointer{
+    cursor: pointer;
+}
+.color-white{
+    color: white;
+}
+.text-center{
+    text-align: center;
+}
+.text-right{
+    text-align: right;
+}
+.p-relative{
+    position: relative;
+}
+.p-absolute{
+    position: absolute;
+}
+.t-p-0{
+    top: 0;
+    left: 0;
+}
+.transition-3s{
+    transition: all .3s linear;
+}
+.list-s-none{
+    list-style: none;
+}
+.t-l-50{
+    top: 50%;
+    left: 50%;
+}
+.transform-center{
+    transform: translate(-50%, -50%);
+}
+.container{
+    width: 82%;
+    margin: auto;
+}
+
+.background{
+    height: 70vh;
+    background: url("../images/project_background.jpg");  
+    background-size: cover;  
+    background-repeat: no-repeat;
+    z-index: 3;
+}
+.layout{
+    width: 100%;
+    height: 70vh;
+    top: 0;
+    left: 0;
+    background-color: #007fd438;
+    z-index: 4;
+    
+}
+.menuIcon{
+    width: 70px;
+    height: 70px;
+    border: 1px solid #00bcd4;
+    border-radius: 50%;
+    background-color: #00bcd4;   
+    position: fixed; 
+    top: 20px;
+    left: 20px;
+    box-shadow: rgb(10, 10, 10) 1px 2px 2px 0px;
+    z-index: 10;
+}
+.header{
+    z-index: 20;
+}
+.menuIcon i{
+    font-size: 2rem;
+}
+.messageIcon{
+    position: fixed;
+    bottom: 50px;
+    right: 60px;
+    font-size: 2rem;
+}
+.header h1{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 3.9rem;
+}
+.subHeader{
+    margin: 15px 40px;
+}
+.sub1{
+    border-right: 2px solid white;
+    padding: 1px 12px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.sub1:hover{
+    color: #00bcd4;
+}
+.sub2{
+    color: #00bcd4;
+    padding: 1px 12px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.navBar{
+    background-color: #00bcd4;
+    font-family: 'Roboto', sans-serif;
+}
+.mainMenu{
+    font-size: 13px;
+}
+.mainMenu li{
+    padding: 20px 0 10px 0;
+}
+.mainMenu li:hover{
+    background-color: white;
+    color: #00bcd4;
+}
+.lift ul{
+    top: 100%;
+    left: 0;
+}
+hr{
+    width: 60%;
+    margin: auto;
+    margin-top: 10px;
+    border: 1px solid #00bcd4;
+}
+.lift ul li{
+    padding: 8px 3px 8px 10px;
+}    
+.subLift{
+    width: 100%;
+    font-size: 13px;
+    display: none;
+    box-shadow: rgb(14, 13, 13) 2px 2px 0 0;
+    border-bottom: 2px solid #00bcd4;
+}
+.mainMenu li:hover .subLift{
+    display: block;
+    background-color: white;
+    color: #00bcd4;
+}
+.passenger:hover{
+    background-color: #00bcd4 !important;
+    color: white !important;
+    padding-right: 10px;
+}
+.medical:hover{
+    background-color: #00bcd4 !important;
+    color: white !important;
+    padding-right: 10px;
+}
+.freight:hover{
+    background-color: #00bcd4 !important;
+    color: white !important;
+    padding-right: 10px;
+}
+.subPassenger{
+    width: 80%;
+    margin-right: 5px;
+    top: 0 !important;
+    left: 100% !important;
+    display: none;
+    border: 1px solid #00bcd4;
+}
+.subPassenger li{
+    transition: all .3s linear;
+}
+.passenger:hover .subPassenger{
+    display: block;
+}
+.subPassenger li:hover{
+    background-color: #00bcd4;
+    color: white;
+    padding-right: 15px;
+}
+.subMedical{
+    width: 70%;
+    margin-right: 5px;
+    top: 0 !important;
+    left: 100% !important;
+    display: none;
+    border: 1px solid #00bcd4;
+}
+.medical:hover .subMedical{
+    display: block;
+}
+.subMedical li{
+    transition: all .3s linear
+}
+.subMedical li:hover{
+    background-color: #00bcd4;
+    color: white;
+    padding-right: 15px;
+}
+.subFreight{
+    width: 60%;
+    margin-right: 5px;
+    top: 0 !important;
+    left: 100% !important;
+    display: none;
+    border: 1px solid #00bcd4;
+}
+.freight:hover .subFreight{
+    display: block;
+}
+.subFreight li{
+    transition: all .3s linear
+}
+.subFreight li:hover{
+    background-color: #00bcd4;
+    color: white;
+    padding-right: 15px;
+}
+
+.eskalator ul li{
+    padding: 8px 3px 8px 10px;
+}
+
+.eskalator:hover .subEskalator{
+    display: block;
+}
+.subEskalator li{
+    transition: all .3s linear
+}
+.subEskalator li:hover{
+    background-color: #00bcd4;
+    color: white;
+    padding-right: 15px;
+}
+
+.autoDoor ul li{
+    padding: 8px 3px 8px 10px;
+}
+.autoDoor:hover .subAutoDoor{
+    display: block;
+}
+.subAutoDoor li{
+    transition: all .3s linear;
+}
+.subAutoDoor li:hover{
+    background-color:#00bcd4;
+    color: white;
+    padding-right: 15px;
+}
+.security ul li{
+    padding: 8px 2px 8px 2px ;
+}
+.security ul{
+    z-index: 60;
+}
+.security{
+    font-size: 12px;
+}
+
+.security:hover .subSecurity{
+    display: block;
+}
+.subSecurity li{
+    transition: all .3s linear;
+}
+.subSecurity li:hover{
+    background-color:#00bcd4;
+    color: white;
+    padding-right: 15px;
+}
+.sameSub{
+    width: 100%;
+    top: 100%;
+    left: 0;
+    display: none;
+    background-color: white;
+    box-shadow: rgb(14, 13, 13) 2px 2px 0 0;
+    border-bottom: 2px solid #00bcd4;
+    padding-right: 5px;
+    font-size: 13px;
+}
+.spareParts ul{
+    z-index: 50;
+}
+.spareParts ul li{
+    padding: 8px 2px 8px 2px ;
+
+}
+.spareParts:hover .subSpare{
+    display: block;
+}
+.subSpare li{
+    transition: all .3s linear;
+}
+.subSpare li:hover{
+    background-color: #00bcd4;
+    color: white;
+    padding-right: 15px;
+}
+.products{
+    margin-top: 50px;
+    
+}
+.top h1{
+    font-size: 2.5rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: normal;
+}
+.search{
+    width: 27%;
+    z-index: 10;
+}
+.search input{
+    width: 100%;
+    padding: 15px;
+    border: 1px solid white;
+    border-bottom: 1px solid silver;
+    border-radius: 8px;
+}
+.search i{
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+}
+.pictures{
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+.box{
+    width: 23%;
+    height: 350px;
+    margin-top: 20px;
+    border: 1px solid black;
+    border-radius: 7px;
+    padding: 20px 15px;
+    font-size: 14px;
+    transition: all .3s linear;
+}
+.box img{
+    width: 100%;
+    height: 80%;
+    margin: auto;
+    object-fit: cover;
+    margin-bottom: 10px;
+    transition: all .3s linear;
+}
+.box p{
+    margin-bottom: 8px;
+}
+.box:hover{
+    border: 1px solid #00bcd4;
+    box-shadow: rgba(0, 0, 0, 0.781) 0 2px 1px 0;
+}
+.box:hover img{
+    transform: scale(1.05);
+}
+@media only screen and (max-width: 1327px) {
+    .lift{
+        width: 15%;
+    }
+    .subPassenger{
+        width: 90%;
+    }
+    .subFreight{
+        width: 80%;
+    }
+    .subMedical{
+        width: 80%;
+    }
+    .security{
+        width: 18.32%;
+    }
+}
+@media only screen and (max-width: 1055px) {
+    .mainMenu{
+        flex-wrap: wrap;
+    }
+    .lift{
+        width: 33%;
+    }
+    .subPassenger{
+        z-index: 80;
+    }
+    .subMedical{
+        z-index: 80;
+    }
+    .eskalator{
+        width: 33%;
+        z-index: 70;
+    }
+    .autoDoor{
+        width: 33%;
+        z-index: 70;
+    }
+    .autoPark{
+        width: 33%;
+    }
+    .security{
+        width: 33%;
+    }
+    .spareParts{
+        width: 33%;
+    }
+    .messageIcon{
+        top: 50px;
+        right: 60px;
+        color: green;
+        z-index: 90;
+    }
+}
+@media only screen and (max-width: 940px) {
+    .box{
+        width: 31%;
+    }
+}
+@media only screen and (max-width: 730px) {
+    .box{
+        width: 47%;
+    }
+}
+@media only screen and (max-width: 490px) {
+    .box{
+        width: 80%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+}

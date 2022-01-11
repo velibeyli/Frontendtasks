@@ -1,0 +1,188 @@
+@mixin screen($device) {
+    @if $device == lg {
+        @media only screen and (max-width: 1200px) {
+            @content;
+        }
+    } @else if $device == padPro {
+        @media only screen and (max-width: 1024px) {
+            @content;
+        }
+    } @else if $device == padPro {
+        @media only screen and (max-width: 1024px) {
+            @content;
+        }
+    } @else if $device == pad {
+        @media only screen and (max-width: 770px) {
+            @content;
+        }
+    } @else if $device == xs {
+        @media only screen and (max-width: 480px) {
+            @content;
+        }
+    } @else {
+        @media only screen and (max-width: $device) {
+            @content;
+        }
+    }
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.pointer{
+    cursor: pointer;
+}
+.align-item-center{
+    align-items: center;
+}
+.navigation{
+    background-color: rgba(255, 255, 255, 0.747);    
+    .container-fluid{
+        .form-control{           
+            @include screen(xs){
+                width: 430px;
+            }
+        }
+        .navbar-nav{
+            .bell{
+              margin-left: 0 !important;
+            }
+            select{
+                background-color: rgba(255, 255, 255, 0);
+                border: none;
+                @include screen("992px") {
+                    width: 10%;
+                }
+            }
+        }
+        form{
+            .form-control{
+                width: 400px;
+                border-radius: 15px;
+                background-color: rgba(255, 255, 255, 0);
+                border: 1px solid gray;
+            }
+            i{
+                top: 50%;
+                left: 10px;
+                transform: translateY(-50%);
+            }
+        }
+        
+    }    
+}
+.container{
+    .topSide{
+        .col-md-6{
+            h4{
+                @include screen(pad) {
+                    text-align: center;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+        .col-md-3{
+            .border{
+                border-radius: 8px;
+                transition: all .3s linear;
+                @include screen (pad) {
+                    margin-bottom: 10px;
+                }
+                &:hover{
+                    border: 1px solid rgb(32, 141, 17) !important;
+                    color: rgb(32, 141, 17);
+                }
+            }
+        }
+    }
+    .middleSide{
+        .col-lg-9{            
+            .inside-col{
+                border-radius: 8px;
+                background-color: rgb(247, 247, 247);
+                @include screen("992px"){}
+                hr{
+                    width: 95%;
+                }
+                .d-flex{
+                    @include screen(pad) {
+                        display: block !important;
+                        text-align: center !important;
+                    }
+                    img{
+                        object-fit: cover;
+                    }
+                    .price{
+                        @include screen(pad) {
+                            margin-top: 20px;
+                            margin-bottom: 20px;
+                        }
+                    }
+                    .details{
+                        @include screen(pad) {
+                            margin-top: 15px;
+                            margin-bottom: 15px;
+                        }
+                        .fs-6{
+                            font-size: 15px !important;
+                        }
+                        p{
+                            margin-bottom: 0.4rem!important;
+                            font-size: 18px;
+                        }
+                    }
+                    .d-flex{                        
+                        @include screen(pad) {
+                            display: flex !important;
+                            width: 100px;
+                            margin: auto !important;
+                        }
+
+                        .box{
+                            width: 40px;
+                            border: 1px solid silver;
+                            background-color: white;
+                        }
+                    }
+                                                         
+                }
+            }
+        }
+        .col-lg-3{
+            .inside-col-md-3{
+                border-radius: 8px;  
+                @include screen("990px") {
+                    margin-top: 15px;
+                }             
+            }
+            .btn{
+                background-color: rgb(32, 141, 17);
+                color: white;
+                transition: all .3s linear;
+                &:hover{
+                    background-color: darken($color: rgb(32, 141, 17), $amount: 10);
+                }
+            }
+        }
+    }
+}
+.bottom{
+    background-color: #444444;
+    .copyright{
+        font-size: 14px;
+    }
+    .row{
+        border-bottom: 1px solid black;
+        .offset-md-4{
+            @include screen(pad) {
+                text-align: center;
+                margin-bottom: 15px;
+            }
+        }
+        .socialNetwork{
+            color: silver;
+        }
+    }
+    
+}

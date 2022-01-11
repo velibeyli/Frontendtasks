@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.m-auto{
+    margin: auto;
+}
+.p-relative{
+    position: relative;
+}
+.p-absolute{
+    position: absolute;
+}
+.t-l-50{
+    top: 50%;
+    left: 50%;
+}
+.transform-50{
+    transform: translate(-50%, -50%);
+}
+.d-flex{
+    display: flex;
+}
+.s-between{
+    justify-content: space-between;
+}
+.text-center{
+    text-align: center;
+}
+.color-white{
+    color: white;
+}
+.l-s-none{
+    list-style: none;
+}
+.pointer{
+    cursor: pointer;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+.transition-3s{
+    transition: all .3s linear;
+}
+.topS{
+    background-color: #AB9969;
+}
+body{
+    background-color: #f1f1f1;
+}
+.language{
+    width: 120px;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    padding: 15px 30px;
+}
+.language select{
+    background-color: #AB9969;
+    color: white;
+    border: none;
+    padding-left: 5px;
+}
+.media{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #927E4B;
+    margin-top: 10px;
+    margin-right: 15px;
+}
+.media i{
+    font-size: 0.9em;
+    color: rgb(201, 201, 201);
+}
+.follow p{
+    margin-top: 12px;
+    margin-right: 45px;
+}
+.media:hover{
+    background-color: white;
+    color: #927E4B;
+}
+.media i:hover{
+    color: #927E4B;
+}
+
+.logo-navBar img{
+    object-fit: cover;
+    transform: scale(0.7);
+    cursor: pointer;
+}
+.navBar{
+    width: 55%;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+.navBar ul li{
+    font-size: 14px;
+    padding: 12px 20px;
+    transition: all .3s linear;
+    cursor: pointer;
+}
+.navBar ul li:hover{
+    background-color: #1387e4;
+    color: white;
+}
+.subPortfolio{
+    width: 120%;
+    top: 100%;
+    left: 0;
+    display: none;
+    background-color: #1387e4;
+    text-align: left;
+}
+.portfolio:hover .subPortfolio{
+    display: block;
+}
+.subPortfolio li:hover {
+    background-color: #1C5DB9 !important;
+}
+.about{
+    background: url("../images/about-pic.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 50px;
+    padding-top: 60px;
+    background-position: center;
+}
+.about h1{
+    margin-bottom: 20px;
+}
+.history{
+    margin-top: 50px;
+    background-color: #eef1f6;
+}
+.history img{
+    display: block;
+    margin-left: auto;
+    width: 50%;
+    top: 0;
+    right: 0;
+    object-fit: cover;
+}
+.leftS{
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    width: 64%;
+    margin-top: 50px;
+    padding: 40px;
+    padding-bottom: 20px;
+    background-color: white;
+}
+.leftS p{
+    padding-top: 30px;
+    line-height: 1.8em;
+}
+.mission{
+    height: 500px;
+    background-color: blue;
+}
+.side-of-img{
+    
+}

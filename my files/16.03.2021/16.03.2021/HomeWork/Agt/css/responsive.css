@@ -1,0 +1,920 @@
+        /* @media */
+@media only screen and (max-width : 1440px) {
+    .owl-nav, .owl-dots{
+        left: 240px;
+        bottom: 20px;
+    }
+
+    .history-box p{
+        font-size: 13px;
+    }
+
+    .office{
+        margin-bottom: 15vh !important;
+    }
+
+    .office p{
+        width: 70%;
+    }
+
+    .o-content{
+        width: 80%;
+    }
+
+    .o-content .border-alt{
+        width: 5%;
+    }
+
+    .o-content p{
+        width: 90%;
+    }
+}     
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+    .item, .item img{
+        height:70vh !important;
+    }
+
+    .owl-nav, .owl-dots{
+        left: 150px;
+    }
+
+    .slide-info h1{
+        font-size: 30px;
+    }
+    
+    
+    .slide-info a{
+        font-size: 10px;
+        padding: 7px 17px;
+    }
+
+    .building-img{
+        display: none;
+    }
+
+    .building {
+        text-align: center;
+    }
+
+    .building .border-alt{
+        margin: 0 auto;
+    }
+
+    .building .subtitle{
+        text-align: center !important;
+        margin-bottom: 30px !important;
+        width: 100%;
+    }
+
+    .btn-view{
+        position: relative !important;
+    }
+
+    .history-box p{
+        font-size: 13px;
+    }
+
+    .office{
+        margin-bottom: 15vh !important;
+    }
+
+    .office p{
+        width: 70%;
+    }
+
+    .o-content{
+        width: 80%;
+    }
+
+    .o-content .border-alt{
+        width: 5%;
+    }
+
+    .o-content p{
+        width: 90%;
+    }
+
+    .hr div{
+        flex: 100% !important;
+        max-width: 100% !important;
+        text-align: center;
+    }
+
+    .hr p{
+        width: 95%;
+    }
+
+    .pro-item .hover a{
+        width: 30px;
+        height: 30px;
+    }
+
+    .pro-item .hover a i{
+        line-height: 30px;
+        font-size: 13px;
+    }
+
+    .pro-item .hover .pro-info h4{
+        font-size: 17px;
+    }
+
+    .pro-item .hover .pro-info p{
+        font-size: 15px;
+    }
+
+    .pro-item .hover .pro-info{
+        top:55%;
+        padding-left: 10px !important;
+    }
+
+    .ended .row div{
+        height: 50vh;
+    }
+}
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+    
+    .slide-info{
+        padding-top: 13vh !important;
+    }
+
+    .item, .item img{
+        height: 40vh !important;
+    }
+
+    .owl-nav, .owl-dots{
+        left: 110px;
+    }
+
+    .slide-info h1{
+        font-size: 30px;
+    }
+    
+    .slide-info h1:after{
+        width: 10%;
+        top: 20px;
+    }
+    
+    .slide-info p{
+        width: 70%;
+        font-size: 15px;
+        margin-top: 25px;
+    }
+    
+    .slide-info a{
+        margin-top: 12px;
+        font-size: 10px;
+    }
+
+    .contact i{
+        font-size: 30px;
+    }
+
+    .contact span{
+       font-size: 10px !important;
+   }
+
+
+   .p-header-content p{
+        width: 70%;
+    }
+
+   .history-box p{
+    font-size: 12px;
+    }
+
+    .m-item p{
+        font-size: 10px;
+    }
+
+    .m-item p::before{
+        margin-right: 13px;
+    }
+
+    .missions .m-item p{
+        font-size: 12px;
+        line-height: 2;
+    }
+
+    .m-m{
+        margin-bottom: 20px;
+    }
+
+    .o-content{
+        margin-top: 20vh;
+        padding: 30px 70px;
+    }
+
+    .o-content p{
+        font-size: 13px;
+    }
+
+    .pro-item .hover a{
+        width: 40px;
+        height: 40px;
+    }
+
+    .pro-item .hover a i{
+        line-height: 40px;
+        font-size: 15px;
+    }
+
+    .pro-item .hover .pro-info h4{
+        font-size: 20px;
+    }
+
+    .pro-item .hover .pro-info p{
+        font-size: 15px;
+    }
+
+    .pro-item .hover .pro-info{
+        top:45%;
+        padding-left: 10px !important;
+    }
+
+}
+
+@media only screen and (max-width: 991px){
+    .navbar-nav{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .nav-link{
+        font-size: 20px;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 770px) {
+
+    .social span{
+        display: none;
+    }
+
+    .slide-info{
+        padding-top: 10vh !important;
+        padding: 0 30px;
+    }
+
+
+    .owl-nav, .owl-dots{
+        left: 70px;
+    }
+
+    .item, .item img{
+        height: 37vh !important;
+    }
+
+    .slide-info h1{
+        font-size: 30px;
+    }
+    
+    .slide-info h1:after{
+        width: 10%;
+        top: 20px;
+    }
+    
+    .slide-info p{
+        width: 100%;
+        font-size: 15px;
+        margin-top: 25px;
+    }
+    
+    .slide-info a{
+        margin-top: 12px;
+        font-size: 10px;
+    }
+
+    .ended .row div{
+        height: 20vh;
+    }
+
+    .building .subtitle{
+        width: 100%;
+    }
+
+    .s-item svg{
+        width: 80%;
+    }
+
+    .hover a{
+        width: 50px;
+        height: 50px;
+    }
+
+    .hover a i{
+        line-height: 50px;
+        font-size: 15px;
+    }
+
+    .pro-info{
+       padding-left: 13px !important;
+       top: 45%;
+    }
+
+    .pro-info h4{
+        font-size: 20px !important;
+    }
+
+    .contact i{
+        font-size: 30px;
+    }
+
+    .contact span{
+       font-size: 10px !important;
+   }
+
+   .p-header-content p{
+        width: 80%;
+    }
+
+    .history img{
+        width: 100%;
+    }
+
+    .history-box{
+        width: 100%;
+    }
+
+    .history-box p{
+        font-size: 11px;
+    }
+
+    .mm-contents{
+        margin-top: 18vh;
+    }
+
+    .mm-contents h2{
+        font-size:  20px;
+    }
+
+    .m-item p{
+        font-size: 8px;
+    }
+
+    .m-item p::before{
+        margin-right: 10px;
+    }
+
+    .missions .m-item p{
+        font-size: 12px;
+        line-height: 2;
+    }
+
+    .m-m{
+        margin-bottom: 20px;
+    }
+
+    .o-content{
+        margin-top: 20vh;
+        padding: 30px 70px;
+    }
+
+    .o-content p{
+        font-size: 13px;
+    }
+
+    .head-img{
+        height: 50vh;
+    }
+
+    .p-slider div{
+        width: 150px;
+        height: 150px !important;
+    }
+
+    .pro-item .hover .pro-info{
+        display: none;
+    }
+
+}
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+
+    .slide-info{
+        padding-top: 5vh !important;
+        padding: 0 30px;
+    }
+
+    .owl-dots, .owl-nav{
+        display: none;
+    }
+
+
+    .slide-info{
+        padding-top: 10vh !important;
+    }
+
+    .slide-info h1{
+        font-size: 20px;
+    }
+    
+    .slide-info h1:after{
+        width: 10%;
+        top: 20px;
+    }
+    
+    .slide-info p{
+        width: 100%;
+        font-size: 10px;
+        margin-top: 25px;
+    }
+    
+    .slide-info a{
+        margin-top: 12px;
+        font-size: 10px;
+    }
+
+    .pro-info{
+        top: 50%;
+     }
+
+     .btn-load{
+        padding: 15px 50px;
+        font-size: 15px !important;
+     }
+
+     .p-header{
+         height: 38vh;
+     }
+
+     .p-header-content{
+        padding-top: 4em;
+     }
+
+     .p-header-content p{
+        width: 90%;
+        font-size: 13px;
+    }
+
+    .history{
+        margin-bottom: 70px;
+    }
+
+    .history img{
+        width: 100%;
+    }
+
+    .history-box{
+        width: 100%;
+        height: 90vh;
+        margin: 0 auto;
+    }
+
+    .history-box p{
+        font-size: 12px;
+    }
+
+    .m-item p{
+        font-size: 15px;
+    }
+
+    .m-m{
+        overflow: inherit;
+        margin-top: 25vh;
+    }
+
+    .missions{
+        margin-top: 20px;
+    }
+
+    .office{
+        margin-top: 28vh;
+        margin-bottom: 23vh !important;
+    }
+    
+    .office p{
+        width: 100%;
+    }
+
+    .o-content{
+        margin-top: 27vh;
+        width: 100%;
+        padding: 40px;
+    }
+
+    .o-content p{
+        width: 89%;
+    }
+
+    .hr p{
+        font-size: 15px;
+        color: #7c8494;
+        line-height: 2;
+        width: 100%;
+    }
+
+    .hr .col-md-7{
+        padding: 20px !important; 
+    }
+
+    .p-content h1{
+        font-size: 30px;
+    }
+
+    .p-content p{
+        font-size: 13px;
+    }
+
+    .head-img{
+        height: 30vh;
+    }
+
+
+    .p-slider{
+        height: 15vh;
+    }
+
+    .p-slider div{
+        width: 100px;
+        height: 100px !important;
+    }
+
+    .alt-list, .ust-list{
+        width: 100% !important;
+    }
+
+
+
+    .alt-list li, .ust-list li{
+        width: 100%;
+        margin-top: 1.5em;
+        text-align: center;
+    }
+
+    .default{
+        transform: translate(-7%);
+    }
+
+    .default li{
+        margin-right: 10px !important;
+    }
+
+    .default li a{
+        font-size: 15px !important;
+    }
+
+    .default li a{
+        padding: 10px 22px;
+    }
+
+}
+
+@media only screen and (max-width : 420px) {
+
+    .slide-info{
+        padding-top: 5vh !important;
+        padding: 0 30px;
+    }
+
+    
+    .item, .item img{
+        height: 32vh !important;
+    }
+
+    .slide-info h1{
+        font-size: 20px;
+    }
+    
+    .slide-info h1:after{
+        width: 10%;
+        top: 20px;
+    }
+    
+    .slide-info p{
+        width: 100%;
+        font-size: 10px;
+        margin-top: 25px;
+    }
+    
+
+    .title{
+        font-size: 30px;
+    }
+
+
+    .ended .row div {
+        height: 33vh;
+    }
+
+    .slide-info a{
+        margin-top: 12px;
+        font-size: 10px;
+    }
+
+    .pro-info{
+        top: 50%;
+     }
+
+     .btn-load{
+        padding: 15px 50px;
+        font-size: 15px !important;
+     }
+
+     .p-header-content{
+        padding-top: 4em;
+     }
+
+     .p-header-content p{
+        width: 90%;
+        font-size: 13px;
+    }
+
+    .p-header-content p{
+        width: 100%;
+    }
+
+    .history{
+        margin-bottom: 70px;
+    }
+
+    .history img{
+        width: 100%;
+    }
+
+    .history-box p{
+        font-size: 10px;
+    }
+
+    .m-item p{
+        font-size: 10px;
+    }
+
+    .m-m{
+        overflow: inherit;
+        margin-top: 48vh;
+    }
+
+    .missions{
+        margin-top: 20px;
+    }
+
+    .office{
+        margin-top: 71vh;
+        margin-bottom: 23vh !important;
+    }
+    
+    .office p{
+        width: 100%;
+    }
+
+    .o-content{
+        margin-top: 27vh;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .o-content p{
+        width: 88%;
+    }
+
+    .hr{
+        margin-top: 36vh;
+    }
+
+    .hr p{
+        font-size: 13px;
+        color: #7c8494;
+        line-height: 2;
+        width: 100%;
+    }
+
+    .hr .col-md-7{
+        padding: 20px !important; 
+    }
+
+    .p-content h1{
+        font-size: 30px;
+    }
+
+    .p-content p{
+        font-size: 13px;
+    }
+
+    .head-img{
+        height: 30vh;
+    }
+
+    .p-slider{
+        height: 15vh;
+    }
+
+    .p-slider div{
+        width: 80px;
+        height: 80px !important;
+    }
+
+    .alt-list, .ust-list{
+        width: 100% !important;
+    }
+
+    .default li{
+        margin-right: 10px !important;
+    }
+
+    .default li a{
+        font-size: 15px !important;
+    }
+
+    .default li a{
+        padding: 10px 22px;
+    }
+    
+}
+
+@media only screen and (max-width : 320px) {
+   
+    .lang i{
+        display: none;
+    }
+
+    .subtitle{
+        font-size: 13px;
+    }
+
+    .slide-info h1{
+        font-size: 15px;
+    }
+
+
+    .owl-nav, .owl-dots{
+        bottom: 15px;
+    }
+
+    
+    .slide-info{
+        padding-top: 5vh !important;
+        padding: 0 30px;
+    }
+    
+    .item, .item img{
+        height: 36vh !important;
+    }
+
+    .slide-info h1:after{
+        width: 10%;
+        top: 20px;
+    }
+    
+    .slide-info p{
+        width: 100%;
+        font-size: 10px;
+        margin-top: 25px;
+    }
+    
+    .slide-info a{
+        margin-top: 12px;
+        font-size: 10px;
+    }
+
+    .p-header{
+        height: 51vh;
+    }
+
+    .p-header-content{
+        padding-top: 7em;
+    }
+
+    .p-header-content h1{
+        font-size: 25px;
+    }
+
+    .p-header-content p{
+        width: 100%;
+    }
+    
+    .s-item svg{
+        width: 200%;
+    }
+
+    .ended .row div{
+        height: 40vh;
+    }
+
+    .s-item p{
+        font-size: 10px;
+    }
+
+    .building .subtitle{
+        width: 100%;
+    }
+
+    .pro-info{
+        top: 50%;
+     }
+
+     .contact i{
+         font-size: 30px;
+     }
+
+     .contact span{
+        font-size: 12px !important;
+    }
+
+    footer p{
+        font-size: 13px;
+    }
+
+
+    .p-content h1{
+        font-size: 22px;
+    }
+
+    .p-content p{
+        font-size: 10px;
+    }
+
+    .head-img{
+        height: 15vh;
+    }
+
+
+    .p-slider{
+        height: 10vh;
+    }
+
+    .p-slider div{
+        width: 70px;
+        height: 70px !important;
+    }
+
+    .e-content .border-alt{
+        width: 20%;
+    }
+
+    .title{
+        font-size: 30px;
+    }
+
+
+
+    .default{
+        transform: translate(-3%);
+    }
+    
+    .default li{
+        margin-right: 20px;
+        transform: translate(-10%, -10%);
+    }
+
+    .default li a{
+        padding: 10px 22px;
+        font-size: 13px;
+    }
+
+    .alt-list, .ust-list{
+        width: 100%;
+        left: 0;
+    }
+
+    .alt-list li, .ust-list li{
+        margin-right: 0 !important;
+    }
+
+    .alt-list li a, .ust-list li a{
+        font-size: 10px;
+    }
+
+    .pro-item .hover a{
+        width: 30px;
+        height: 30px;
+    }
+
+    .pro-item .hover a i{
+        line-height: 23px;
+        font-size: 15px;
+    }
+
+
+    .history-box{
+        height: 130vh;
+    }
+
+    .m-m{
+        margin-top: 95vh;
+    }
+    
+    .office{
+        margin-top: 120vh;
+    }
+    
+    .o-content{
+        margin-top: 31vh;
+    }
+
+    .o-content p{
+        width: 87%;
+    }
+
+    .hr{
+        margin-top: 51vh;
+    }
+
+
+}

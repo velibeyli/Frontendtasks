@@ -1,0 +1,22 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+table{
+  border-collapse: collapse;
+  border-spacing: 0;
+  background-color: aqua;
+  margin: 10px auto;
+}
+table tr td{
+  width: 90px;
+  height: 90px;
+  text-align: center;
+  border: 1px solid black;
+  font-size: 35px;
+}
+table tr td:hover{
+  background-color: chartreuse;
+  cursor: pointer;
+}

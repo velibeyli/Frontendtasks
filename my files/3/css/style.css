@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.blue{
+    color: blue;
+}
+.red{
+    color: red;
+}
+.green{
+    color: green;
+}
+.left{
+    background-color: blueviolet;
+    height: 300px;
+    width: 30%;
+}
+.right{
+    background-color: brown;
+    height: 300px;
+    width: 35%;
+}
+.wrapper{
+    display: flex;
+    justify-content: space-around;
+}
+.wrapper2{
+    margin-top: 30px;
+    display: flex;
+    background-color: darkblue;
+    justify-content: space-between; 
+
+}
+.headBox{
+    width: 22%;
+    background-color: cornsilk;
+    height: 150px;
+    border: 1px solid brown;
+}
+.wrapper2 i{
+    margin-top: 30px;
+    margin-left: 30px;
+    font-size: 24px;
+   }
+
+.todayTopSection{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.todayTopSection .secondBox{
+    padding: 30px;
+    height: 230px;
+    width: 23%;
+    border-radius: 5px;
+    border: 1px solid gray;
+    transition: all 0.3s linear;
+}
+.secondBox i{
+    font-size: 30px;    
+    padding-right: 25px;
+}
+.secondBox p{
+    margin-top: 20px;
+}
+.secondBox h6{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+section h3{
+    margin-top: 20px;
+    color: gray;
+}
+.todayTopSection .secondBox:hover{
+    background-color: green;
+    color: white;
+}
+.mainPart{
+    display: flex;
+}
+.leftSide{
+    height: 300px;
+    width: 50%;
+    background-color: violet;
+}
+.rightSide{
+    height: 300px;
+    width: 50%;
+    background-color: blue;
+
+}
+.rightSide h3{
+    color: white;
+    padding: 50px 90px;
+    text-align: center;
+    transition: all .3s linear;
+
+}
+.rightSide h3:hover{
+    color: black;
+}
+.listExample ul{
+    color: red;
+    margin-left: 40px;
+}
+.listExample ul{
+text-decoration: none;
+display: flex;
+justify-content: space-around;
+}
+.listExample ul li{
+    list-style: none;
+    border: 1px solid gray;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.finalExample .box {
+    height: 30px;
+    width: 18%;
+    border: 5px solid blue;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    
+
+}
+.finalExample{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}

@@ -1,0 +1,122 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.pointer{
+  cursor: pointer;
+}
+.cover{
+  height: 50vh;
+  background-image: url("../images/boya\ 1.png");
+  background-size: cover;
+  background-position: center;
+}
+.navigation{
+  background-color: rgba(255, 255, 255, 0.747);
+}
+.container-fluid .form-control{
+  width: 400px;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid gray;
+}
+.container-fluid form i{
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+}
+.navbar-nav select{
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+}
+.container .products{
+  width: calc(100%/4.15);
+  border-radius: 7px;
+  margin-bottom: 15px; 
+  border: 1px solid white;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  transition: all .1s linear;
+}
+.container .products:hover{
+  border: 1px solid rgb(0, 102, 255);
+  color: rgb(0, 102, 255);
+}
+.section2{
+  background-color: rgb(242,242,242);
+}
+.section2 .container p{
+  font-size: 14px;
+}
+.section2 .row .firstCol div{
+  border: 1px solid rgb(212, 212, 212);
+  border-radius: 7px;
+  margin-bottom: 10px;
+  transition: all .1s linear;
+}
+.section2 .row .firstCol div:hover{
+  background-color: rgb(0, 102, 255) !important;
+  color: white;
+}
+.colorBox{
+  width: 30px;
+  height: 22px;
+}
+.section2 .container>h4{
+  position: relative;
+  width: fit-content;
+}
+.section2 .secondCol .d-flex{
+  width: 130px;
+  border: 1px solid gray;
+  border-radius: 7px;
+  transition: all .1s linear;
+}
+.section2 .secondCol .d-flex:hover{
+  background-color: rgb(0, 102, 255) !important;
+  color: white;
+}
+.basket{
+  width: 200px;
+  height: 200px;
+  background-image: url("../images/ambalaj_mobilya\ 1.png");
+  background-size: cover;
+}
+.thirdCol .add div{
+  width: 40px;
+  background-color: white;
+}
+.thirdCol .add{
+  width: 100px;
+}
+.bottom{
+  background-color: #444444;
+}
+.bottom .socialNetwork{
+  color: silver;
+}
+.bottom .row{
+  border-bottom: 1px solid black;
+}
+.bottom .copyright{
+  font-size: 14px;
+}
+@media only screen and (max-width: 992px) {
+  .container .products{
+    width: calc(100%/3.15);
+  }
+}
+@media only screen and (max-width: 768px) {
+  .container .products{
+    width: calc(100%/2.15);
+  }
+  .bottom .offset-md-4{
+    text-align: center !important;  
+}
+@media only screen and (max-width: 576px) {
+  .container .products{
+    width: calc(100%/1.15);
+    margin: auto;
+    margin-bottom: 15px;
+  }
+}

@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box{
+    height: 500px;
+    width: 50%;
+    border: 1px solid silver;
+    margin: auto;
+    margin-top: 30px;
+
+}
+.sendMessage h2{
+    color: gray;
+}
+.box .sendMessage{
+    height: 400px;
+    width: 80%;    
+    margin: auto;
+    margin-top: 30px;
+    text-align: center;
+}
+.box .sendMessage input{
+    width: 100%;
+    height: 50px;
+    margin-top: 30px;
+    border: 1px solid silver;
+    padding-left: 30px;
+}
+.box .sendMessage textarea{
+    width: 100%;
+    height: 150px;
+    margin-top: 30px;
+    padding: 30px;
+}
+.box .sendMessage button{
+    width: 100%;
+    height: 30px;
+    border-radius: 20px;
+    margin-top: 20px;
+    color: white;
+    background-color: black;
+    border: 1px solid black;
+    transition: all .3s linear;
+}
+.sendMessage button:hover{
+    background-color: silver;
+    color: black;
+}

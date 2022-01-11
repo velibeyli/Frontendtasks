@@ -1,0 +1,48 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.sliderCorusel {
+  height: 70vh;
+  width: 70%;
+  margin: auto;
+  overflow: scroll;
+  overflow: hidden;
+}
+
+.sliderItem_1 {
+  display: block;
+}
+.sliderItems img {
+  width: 100%;
+  height: 70vh;
+  object-fit: cover;
+}
+.dot{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 5px;
+  background-color: gray;
+  transition: all .3s linear;
+  cursor: pointer;
+}
+.dot:hover{
+  background-color: black;
+  transform: scale(1.09);
+}
+.activeDot{
+  background-color: black;
+  transform: scale(1.09);
+}
+.changer{
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.changer i{
+  padding: 8px;
+  background-color: rgba(255, 255, 255, 0.685);
+  border: 1px solid black;
+}

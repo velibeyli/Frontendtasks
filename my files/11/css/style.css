@@ -1,0 +1,275 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(236, 236, 236);
+}
+.color-white{
+    color: white;
+}
+.color-gray{
+    color: rgb(204, 201, 201);
+}
+.t-center{
+    text-align: center;
+}
+.m-auto{
+    margin: auto;
+}
+.pointer{
+    cursor: pointer;
+}
+.d-flex{
+    display: flex;
+}
+.l-s-none{
+    list-style: none;
+}
+.transform{
+    transform: translate(-50%, -50%);
+}
+.p-absolute{
+    position: absolute;
+}
+.left-50-t-50{
+    left: 50%;
+    top: 50%;
+}
+.w-83{
+    width: 83%;
+}
+.s-between{
+    justify-content: space-between;
+}
+.f-size{
+    font-size: 0.8em;
+}
+
+.top{
+    width: 100%;
+    background-color: #AB9969;
+}
+
+.top-left{
+    padding: 15px 30px;
+    border-right: 1px solid #80734f;
+    border-left: 1px solid #80734f;
+}
+.top-left i{
+    margin-right: 2px;
+}
+.top-left select{
+    background-color: #AB9969;
+    border: none;
+    color: white;
+}
+.top-right{
+    padding: 10px 30px;
+}
+.top-right p{
+    margin-top: 5px;
+    margin-right: 50px;
+}
+.circle{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #86723dde;
+    position: relative;
+    transition: all .4s linear;
+}
+.circle:hover{
+    background-color: white;
+    color: #86723dde;
+}
+.ln-icon{
+    margin-left: 18px;
+    margin-right: 15px;
+}
+.ig-icon{
+    margin-left: 15px;
+}
+.navBar{
+    margin-top: 20px;
+}
+.navB-right ul li{
+    margin-top: 23px;
+    margin-right: 40px;
+    padding: 10px;
+    cursor: pointer;
+    transition: all .4s linear;
+}
+.navB-right ul li:hover{
+    background-color: #007bff;
+    color: white;
+}
+.navB-right select{
+    border: none;
+    background-color: rgb(236, 236, 236);
+}
+.about{
+    width: 100%;
+    height: 200px;
+    background-image: url("../images/about-pic.png");
+    background-size: cover;
+    background-position: center;
+}
+.aboutBox h1{
+    font-size: 40px;
+    padding-top: 100px;
+    padding-bottom: 20px;
+}
+.history{
+    width: 100%;
+    margin-top: 100px; 
+    position: relative;
+}
+.h-left{
+    width: 65%;
+    background-color: white;
+    left: 100px;
+    top: 50px;
+    z-index: 5;
+}
+.inside-h-l{
+    width: 90%;
+    margin-top: 50px;
+    padding-bottom: 20px;
+}
+.inside-h-l h1{
+    font-size: 2.5em;
+    margin-bottom: 35px;
+}
+.inside-h-l p{
+    line-height: 1.5em;
+}
+.h-right{
+    width: 50%;
+    height: 330px;
+    background-image: url("../images/history-img.png");
+    background-size: cover;
+    margin-left: 50%;
+    z-index: 2;
+}
+.mission{
+    width: 100%;
+    height: 70vh;
+    background-image: url("../images/m-m-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.missionB{
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.leftM{
+    width: 40%;
+    background-color: white;
+    bottom: 0;
+    left: 0;
+}
+.rightM{
+    width: 57%;
+    background-color:white;
+    bottom: 0;
+    right: 0;
+}
+.inside-leftM{
+    width: 80%;
+    margin-top: 40px;
+}
+.inside-leftM h1{
+    font-size: 2.2em;
+    margin-bottom: 30px;
+}
+.icon{
+    width: 20px;
+    height: 7px;
+    background-color: rgb(44, 132, 184);
+    border: 1px solid rgb(44, 132, 184);
+    border-radius: 5px;
+    margin-top: 6px;
+    padding-right: 12px;
+}
+.leftP1{
+    margin-bottom: 25px;
+}
+.inside-rightM{
+    width: 80%;
+    margin-top: 40px;
+}
+.inside-rightM h1{
+    font-size: 2.2em;
+    margin-bottom: 25px;
+}
+.paragraph{
+    margin-bottom: 10px;
+}
+.paragraph p{
+    line-height: 1.5em;
+    font-size: 14px;
+    font-weight: bold;
+}
+.policy{
+    width: 100%;
+    height: 60vh;
+    background-image: url("../images/office.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.words{
+    width: 70%;
+    line-height: 1.8em;
+    transform: translate(-50%, -70%);
+}
+.words h1{
+    font-size: 2em;
+    margin-bottom: 50px;
+}
+.policyPoints{
+    width: 80%;
+    height: 270px;
+    background-color: #ac9969;
+    bottom: -36%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 10px;
+}
+.policyBox{
+    margin-top: 60px;
+    font-size: 18px;
+}
+.policyIcon{
+    width: 50px;
+    height: 5px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: white;
+    margin-top: 7px;
+    margin-right: 25px;
+    padding-right: 50px;
+}
+.insideP-b{
+    margin-bottom: 22px;
+}
+@media only screen and (max-width: 1292px) {
+    .leftPoint{
+        margin-bottom: 20px;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .about p{
+        font-size: 18px;
+    }
+    .aboutBox h1{
+        font-size: 40px;
+        padding-top: 80px;
+        padding-bottom: 20px;
+    }
+
+}
